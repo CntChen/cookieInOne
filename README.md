@@ -18,22 +18,25 @@ This lib uses for storing array data in one cookie.
 
 * Use Localstorage
 
+---
 #### Cookie limit in my development environment ####
 
 **test tools**: [Browser Cookie Limits][Browser Cookie Limits]
 
 * **chrome 44**
-Guessing Max Cookie Count Per Domain: **180**
-Guessing Max Cookie Size Per Cookie: **4096** bytes
-Guessing Max Cookie Size Per Domain: NA
+
+    Guessing Max Cookie Count Per Domain: **180**
+    Guessing Max Cookie Size Per Cookie: **4096** bytes
 
 * **firefox 39**
-Guessing Max Cookie Count Per Domain: **150**
-Guessing Max Cookie Size Per Cookie: **4097** bytes
+
+    Guessing Max Cookie Count Per Domain: **150**
+    Guessing Max Cookie Size Per Cookie: **4097** bytes
 
 * **IE 11**
-Guessing Max Cookie Count Per Domain: **50**
-Guessing Max Cookie Size Per Cookie: **5117** bytes
+
+    Guessing Max Cookie Count Per Domain: **50**
+    Guessing Max Cookie Size Per Cookie: **5117** bytes
 
 
 [Browser Cookie Limits]:http://browsercookielimits.squawky.net/
