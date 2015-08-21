@@ -1,4 +1,3 @@
-var CookieInOne = CookieInOne || {};
 (function() {
   var maxReturnCookieNum = 10;
   var maxStoreCookieNum = maxReturnCookieNum * 2;
@@ -78,10 +77,16 @@ var CookieInOne = CookieInOne || {};
     _setCookie(cookieName, '', -1);
   }
 
-  CookieInOne = {
-    addCookieInOne: addCookieInOne,
-    deleteCookieInOne: deleteCookieInOne,
-    getCookieInOneArray: getCookieInOneArray,
-    clearCookieInOne: clearCookieInOne
-  };
+  function CookieInOne(options) {
+    
+    
+    return CookieInOne = {
+      addCookieInOne: addCookieInOne,
+      deleteCookieInOne: deleteCookieInOne,
+      getCookieInOneArray: getCookieInOneArray,
+      clearCookieInOne: clearCookieInOne
+    };
+  }
 })();
+
+

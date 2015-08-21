@@ -1,0 +1,67 @@
+#contain{
+}
+
+#searchbox{
+	position: relative;
+	top: 100px;
+	width: 50%;
+	margin: 0 auto;
+	border-style: 
+}
+
+#searchinput{
+	padding: 0px 5px;
+	width: 80%;
+	height: 30px;
+	box-sizing: border-box;
+}
+
+#searchsubmit{
+	width: 15%;
+	height: 30px;
+	line-height: 30px;
+}
+
+#searchhistory_tmpl_idcls{
+    /*display: none;*/
+}
+
+.searchhistory{
+    /*display: none;*/
+	width: calc(80% - 10px);
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 4px 2px #aaa;
+    padding: 4px 5px 4px 5px;
+}
+
+.searchhistory a
+{
+    background: white;
+}
+
+.searchhistory a:hover
+{
+    cursor: pointer;
+
+    background-color: #ddd;
+}
+
+.searchhistory .selected
+{
+    background: #ccc;
+}
+
+.searchhistory .selecthistory{
+    display: inline-block;
+    width: calc(100% - 60px);
+    word-wrap: break-word;
+    color: #57a;
+}
+
+.searchhistory .deletehistory{
+	font-size: 14px;
+    text-align: center;
+    width: 50px;
+    display: inline-block;
+}
