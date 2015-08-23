@@ -23,43 +23,45 @@
 }
 
 #searchhistory_tmpl_idcls{
-    /*display: none;*/
+    display: none;
 }
 
-.searchhistory{
-    /*display: none;*/
-	width: calc(80% - 10px);
+#searchhistory{
+    width: 80%;
+    box-shadow: 0 0 10px 1px #aaa;
     outline: none;
-    background-color: #fff;
-    box-shadow: 0 0 4px 2px #aaa;
-    padding: 4px 5px 4px 5px;
 }
 
-.searchhistory a
+.onesearchhistory{
+    background-color: #fff;
+    padding: 2px 5px 2px 5px;
+}
+
+.onesearchhistory a
 {
     background: white;
 }
 
-.searchhistory a:hover
+.onesearchhistory a:hover
 {
     cursor: pointer;
 
     background-color: #ddd;
 }
 
-.searchhistory .selected
+.onesearchhistory .selected
 {
     background: #ccc;
 }
 
-.searchhistory .selecthistory{
+.onesearchhistory .selecthistory{
     display: inline-block;
     width: calc(100% - 60px);
     word-wrap: break-word;
     color: #57a;
 }
 
-.searchhistory .deletehistory{
+.onesearchhistory .deletehistory{
 	font-size: 14px;
     text-align: center;
     width: 50px;
