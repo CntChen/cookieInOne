@@ -13,7 +13,7 @@ This lib uses for storing array data in one cookie.
 ### Usage ###
 
 * New CookieInOne Object
-		
+```
 	  var myCookieInOne;
 
       var cookieOpts = {
@@ -23,23 +23,23 @@ This lib uses for storing array data in one cookie.
 		cookieSparator: '<=>' // default: '<=>'
       };
       myCookieInOne = CookieInOne(cookieOpts);
-
+```
 * Add Cookie
-
+```
       myCookieInOne.addCookieInOne('cookieStr');
-
+```
 * Get Cookie Array
-
+```
 	  var cookieArr = myCookieInOne.getCookieInOneArray();
-
+```
 * Delete Cookie
-
+```
       myCookieInOne.deleteCookieInOne('cookieStr');
-
+```
 * Clear Cookies
-    
+```
       myCookieInOne.clearCookieInOne();
-
+```
 ### TODO ###
 
 * Detect whether cookie disabled
@@ -52,20 +52,20 @@ This lib uses for storing array data in one cookie.
 **test tools**: [Browser Cookie Limits][Browser Cookie Limits]
 
 * **chrome 44**
-
+```
       Guessing Max Cookie Count Per Domain: **180**
       Guessing Max Cookie Size Per Cookie: **4096** bytes
-
+```
 * **firefox 39**
-
+```
       Guessing Max Cookie Count Per Domain: **150**
       Guessing Max Cookie Size Per Cookie: **4097** bytes
-
+```
 * **IE 11**
-
+```
       Guessing Max Cookie Count Per Domain: **50**
       Guessing Max Cookie Size Per Cookie: **5117** bytes
-
+```
 
 [store search history demo]:http://cntchen.github.io/cookieInOne/test/index.html
 [Browser Cookie Limits]:http://browsercookielimits.squawky.net/
