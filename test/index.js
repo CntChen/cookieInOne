@@ -38,6 +38,7 @@ function loadSearchHistory() {
     (function(i) {
       $(historysDiv[i]).find('.selecthistory').click(function() {
         searchInput.val(this.innerText);
+        $('#searchhistory').hide();
       });
 
       $(historysDiv[i]).find('.deletehistory').click(function() {

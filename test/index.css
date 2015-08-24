@@ -27,6 +27,7 @@
 }
 
 #searchhistory{
+    display: none;
     width: 80%;
     box-shadow: 0 0 10px 1px #aaa;
     outline: none;
