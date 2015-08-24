@@ -31,7 +31,7 @@
       return null;
     }
 
-    function addcookieInOne(value) {
+    function addCookieInOne(value) {
       if (!value) {
         return;
       }
@@ -59,7 +59,7 @@
       _setCookie(opts.cookieName, cookieStr, opts.cookieExpire);
     }
 
-    function getcookieInOneArray() {
+    function getCookieInOneArray() {
       var cookieStr = _getCookie(opts.cookieName);
       if (cookieStr === '') {
         return [];
@@ -70,7 +70,7 @@
       return cookieArr;
     }
 
-    function deletecookieInOne(value) {
+    function deleteCookieInOne(value) {
       var cookieStr = _getCookie(opts.cookieName);
       cookieStr = opts.cookieSparator + cookieStr + opts.cookieSparator;
       cookieStr = cookieStr.replace(opts.cookieSparator + value + opts.cookieSparator, opts.cookieSparator);
@@ -79,15 +79,15 @@
       _setCookie(opts.cookieName, cookieStr, opts.cookieExpire);
     }
 
-    function clearcookieInOne() {
+    function clearCookieInOne() {
       _setCookie(opts.cookieName, '', -1);
     }
 
     cookieInOne = {
-      addcookieInOne: addcookieInOne,
-      deletecookieInOne: deletecookieInOne,
-      getcookieInOneArray: getcookieInOneArray,
-      clearcookieInOne: clearcookieInOne
+      addCookieInOne: addCookieInOne,
+      deleteCookieInOne: deleteCookieInOne,
+      getCookieInOneArray: getCookieInOneArray,
+      clearCookieInOne: clearCookieInOne
     };
 
     return cookieInOne;

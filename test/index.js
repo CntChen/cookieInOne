@@ -14,15 +14,15 @@ $(document).ready(function() {
 });
 
 function setDefaultSearchHistory() {
-  historyCookie.clearcookieInOne();
+  historyCookie.clearCookieInOne();
   var defaultSearchHistoryCookies = ['Hello', 'World', 'Ubuntu', 'Linux', 'Good night', 'I know HTML'];
   for (var i = 0; i < defaultSearchHistoryCookies.length; i++) {
-    historyCookie.addcookieInOne(defaultSearchHistoryCookies[i]);
+    historyCookie.addCookieInOne(defaultSearchHistoryCookies[i]);
   }
 }
 
 function loadSearchHistory() {
-  var searchHistoryCookies = historyCookie.getcookieInOneArray();
+  var searchHistoryCookies = historyCookie.getCookieInOneArray();
   var html = $('#searchhistory_tmpl_idcls').html();
   var newHtml = '';
   for (var i = 0; i < searchHistoryCookies.length; i++) {
@@ -42,7 +42,7 @@ function loadSearchHistory() {
 
       $(historysDiv[i]).find('.deletehistory').click(function() {
         var historyStr = $(historysDiv[i]).find('.selecthistory')[0].innerText;
-        historyCookie.deletecookieInOne(historyStr);
+        historyCookie.deleteCookieInOne(historyStr);
         loadSearchHistory();
       });
     })(i);
@@ -92,7 +92,7 @@ function addStaticEvents() {
 function submitSearch() {
   // add cookie
   var searchStr = $('#searchinput').val();
-  historyCookie.addcookieInOne(searchStr);
+  historyCookie.addCookieInOne(searchStr);
 
   // reload history
   loadSearchHistory();
