@@ -34,7 +34,6 @@ function loadSearchHistory() {
   var searchInput = $('#searchinput');
   var historysDiv = $('#searchhistory .onesearchhistory');
 
-
   for (var i = 0; i < historysDiv.length; i++) {
     (function(i) {
       $(historysDiv[i]).find('.selecthistory').click(function() {
@@ -100,10 +99,28 @@ function submitSearch() {
 }
 
 function getHistroyNow() {
-  
-
+  var searchHistory = $('#searchhistory .selecthistory');
+  var length = searchHistory.length;
+  for (var i = 0; i < length; i++) {
+    if ($(searchHistory[i]).hasClass('selected')) {
+      return i + 1;
+    }
+  }
+  return 0;
 }
 
-function gotoHistory() {
+function gotoHistory(index) {
+    var searchHistory = $('#searchhistory .selecthistory');
+    searchHistory.removeClass('selected');
+    var historyMax = searchHistory.length;
 
+    if (index === -1) {
+      index = historyMax;
+    }
+
+    if (index > 0 && index <= historyMax) {
+      $(searchHistory[index - 1]).addClass('selected');
+      var historyStr = searchHistory[index - 1].innerText || searchHistory[index - 1].textContent;
+      $('#searchinput').val(historyStr);
+    }
 }
