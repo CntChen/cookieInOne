@@ -1,3 +1,4 @@
+// CookieInOne
 (function(root){
   var self = root;
 
@@ -37,7 +38,7 @@
       return null;
     }
 
-    function addCookieInOne(value) {
+    function addCookie(value) {
       if (!value) {
         return;
       }
@@ -65,7 +66,7 @@
       _setCookie(opts.cookieName, cookieStr, opts.cookieExpire);
     }
 
-    function getCookieInOneArray() {
+    function getCookieArray() {
       var cookieStr = _getCookie(opts.cookieName);
       if (cookieStr === '') {
         return [];
@@ -76,7 +77,7 @@
       return cookieArr;
     }
 
-    function deleteCookieInOne(value) {
+    function deleteCookie(value) {
       var cookieStr = _getCookie(opts.cookieName);
       cookieStr = opts.cookieSparator + cookieStr + opts.cookieSparator;
       cookieStr = cookieStr.replace(opts.cookieSparator + value + opts.cookieSparator, opts.cookieSparator);
@@ -85,15 +86,15 @@
       _setCookie(opts.cookieName, cookieStr, opts.cookieExpire);
     }
 
-    function clearCookieInOne() {
+    function clearCookie() {
       _setCookie(opts.cookieName, '', -1);
     }
 
     cookieInOne = {
-      addCookieInOne: addCookieInOne,
-      deleteCookieInOne: deleteCookieInOne,
-      getCookieInOneArray: getCookieInOneArray,
-      clearCookieInOne: clearCookieInOne
+      addCookie: addCookie,
+      deleteCookie: deleteCookie,
+      getCookieArray: getCookieArray,
+      clearCookie: clearCookie
     };
 
     return cookieInOne;

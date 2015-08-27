@@ -14,31 +14,31 @@ This lib uses for storing array data in one cookie.
 
 * New CookieInOne Object
 ```
-	  var myCookieInOne;
+	var myCookieInOne;
 
       var cookieOpts = {
 	    cookieName: 'searchHistory', // necessary
 	    maxReturnCookieNum: 20, // default:10
 	    cookieExpire: 1, // default: 365 // (day)
-		cookieSparator: '<=>' // default: '<=>'
+		cookieSparator: '<===>' // default: '<===>'
       };
       myCookieInOne = CookieInOne(cookieOpts);
 ```
 * Add Cookie
 ```
-      myCookieInOne.addCookieInOne('cookieStr');
+      myCookieInOne.addCookie('cookieStr');
 ```
 * Get Cookie Array
 ```
-	  var cookieArr = myCookieInOne.getCookieInOneArray();
+	  var cookieArr = myCookieInOne.getCookieArray();
 ```
 * Delete Cookie
 ```
-      myCookieInOne.deleteCookieInOne('cookieStr');
+      myCookieInOne.deleteCookie('cookieStr');
 ```
 * Clear Cookies
 ```
-      myCookieInOne.clearCookieInOne();
+      myCookieInOne.clearCookie();
 ```
 ### TODO ###
 
