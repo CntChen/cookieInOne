@@ -2,8 +2,8 @@ var historyCookie;
 $(document).ready(function() {
   // init cookieInOne for search history
   var historyCookieOpts = {
-    cookieName: 'searchHistory',
-    maxReturnCookieNum: 20,
+    itemStoredName: 'searchHistory',
+    maxItemCount: 20,
     cookieExpire: 1
   };
   historyCookie = CookieInOne(historyCookieOpts);
@@ -14,15 +14,15 @@ $(document).ready(function() {
 });
 
 function setDefaultSearchHistory() {
-  historyCookie.clearCookie();
+  historyCookie.clearItem();
   var defaultSearchHistoryCookies = ['Hello', 'World', 'Ubuntu', 'Linux', 'Good night', 'I know HTML'];
   for (var i = 0; i < defaultSearchHistoryCookies.length; i++) {
-    historyCookie.addCookie(defaultSearchHistoryCookies[i]);
+    historyCookie.addItem(defaultSearchHistoryCookies[i]);
   }
 }
 
 function loadSearchHistory() {
-  var searchHistoryCookies = historyCookie.getCookieArray();
+  var searchHistoryCookies = historyCookie.getItemArray();
   var html = $('#searchhistory_tmpl_idcls').html();
   var newHtml = '';
   for (var i = 0; i < searchHistoryCookies.length; i++) {
@@ -43,7 +43,7 @@ function loadSearchHistory() {
 
       $(historysDiv[i]).find('.deletehistory').click(function() {
         var historyStr = $(historysDiv[i]).find('.selecthistory')[0].innerText;
-        historyCookie.deleteCookie(historyStr);
+        historyCookie.deleteItem(historyStr);
         loadSearchHistory();
       });
     })(i);
@@ -93,7 +93,7 @@ function addStaticEvents() {
 function submitSearch() {
   // add cookie
   var searchStr = $('#searchinput').val();
-  historyCookie.addCookie(searchStr);
+  historyCookie.addItem(searchStr);
 
   // reload history
   loadSearchHistory();
