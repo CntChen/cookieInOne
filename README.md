@@ -2,10 +2,6 @@
 
 ### Store your array data in one cookie ###
 
-Github:[cookieInOne][cookieInOne]
-
-### Deom: [store search history in cookie demo][Store search history in cookie demo]
-
 ### Background ###
 
 Usually browser can only store limited cookies for one domain, and web developer usually store only a few charaters to a cookie, while cookie size per cookie is max to 4KB.
