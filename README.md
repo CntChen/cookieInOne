@@ -73,7 +73,7 @@ method `addItem` `getItemArray` `deleteItem` `clearItem`
 
 ### Browser Store Data limit ###
 
-* #### Cookie data limit in my development environment ####
+#### Cookie data limit in my development environment ####
 
 **test tools**: [Browser Cookie Limits][Browser Cookie Limits]
 
@@ -98,9 +98,11 @@ Guessing Max Cookie Count Per Domain: **50**
 Guessing Max Cookie Size Per Cookie: **5117** bytes
 ```
 
-* #### localSotrage date limit ####
+#### localSotrage date limit ####
 
 ** test tools **: [Web Storage Support Test][Web Storage Support Test]
+
+# End #
 
 [cookieInOne]:https://github.com/CntChen/cookieInOne
 [store search history in cookie demo]:http://cntchen.github.io/cookieInOne/test/index.html
