@@ -57,6 +57,8 @@
 .onesearchhistory .selecthistory{
     display: inline-block;
     width: calc(100% - 60px);
+    overflow: hidden;
+    white-space: nowrap;
     word-wrap: break-word;
     color: #57a;
 }

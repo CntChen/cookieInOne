@@ -1,5 +1,7 @@
 ## Cookie In One ##
 
+### [Demo][Demo] ###
+
 ### Store your array data in one cookie ###
 
 ### Background ###
@@ -38,5 +40,5 @@ This lib uses for storing array data in one cookie.
     Guessing Max Cookie Count Per Domain: **50**
     Guessing Max Cookie Size Per Cookie: **5117** bytes
 
-
+[Demo]:http://cntchen.github.io/cookieInOne/test/index.html
 [Browser Cookie Limits]:http://browsercookielimits.squawky.net/
